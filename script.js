@@ -133,8 +133,8 @@ function createFood (){
 	
     if(ateFood == true) {
     	food = {
-        x: Math.floor((Math.random() * canvas.width)),
-    	y: Math.floor((Math.random() * canvas.height))
+        x: Math.floor(Math.random() * canvas.width+1),
+    	y: Math.floor(Math.random() * canvas.height+1)
    		}
 
    		if (food.x  <= 0 || food.x + snakeLength >= canvas.width || food.y <= 0 || food.y + snakeHeight >= canvas.height) {
